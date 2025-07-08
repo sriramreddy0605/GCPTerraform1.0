@@ -28,12 +28,3 @@ variable "image" {
   default     = "debian-cloud/debian-12"
 }
 
-variable "ssh_user" {
-  type        = string
-  description = "SSH user name"
-}
-
-variable "public_key_path" {
-  type        = string
-  description = "Path to the SSH public key file"
-}
