@@ -23,9 +23,8 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 
-  metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
+ metadata = {
+   # ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
   }
-
   tags = ["web", "dev"]
 }
